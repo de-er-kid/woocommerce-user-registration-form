@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce User Registration
 Plugin URI: https://github.com/de-er-kid/woocommerce-user-registration-form/
 Description: Adds custom fields to the WooCommerce registration form.
-Version: 0.0.1
+Version: 0.0.2
 Author: Sinan
 Author URI: https://github.com/de-er-kid/
 License: GPL-2.0+
