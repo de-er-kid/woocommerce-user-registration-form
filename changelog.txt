@@ -1,1 +1,7 @@
+Version 0.0.2 - 2023-06-11
+- Added Password & Confirm Password fields
+- Fixed bug Phone field errors.
 
+Version 0.0.1 - 2023-06-10
+- Initial release.
+- Added First Name, Second Name & Phone Number to Email field only registration form. Ref: https://www.cloudways.com/blog/add-woocommerce-registration-form-fields/
