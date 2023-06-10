@@ -17,10 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function wooc_extra_register_fields() { ?>
-    <p class="form-row form-row-wide">
-        <label for="reg_billing_phone"><?php _e( 'Phone', 'woocommerce-user-registration-form' ); ?></label>
-        <input type="text" class="input-text" name="billing_phone" id="reg_billing_phone" value="<?php echo isset( $_POST['billing_phone'] ) ? esc_attr( $_POST['billing_phone'] ) : ''; ?>" />
-    </p>
     <p class="form-row form-row-first">
         <label for="reg_billing_first_name"><?php _e( 'First name', 'woocommerce-user-registration-form' ); ?><span class="required">*</span></label>
         <input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name" value="<?php if ( ! empty( $_POST['billing_first_name'] ) ) echo esc_attr( $_POST['billing_first_name'] ); ?>" />
@@ -28,6 +24,10 @@ function wooc_extra_register_fields() { ?>
     <p class="form-row form-row-last">
         <label for="reg_billing_last_name"><?php _e( 'Last name', 'woocommerce-user-registration-form' ); ?><span class="required">*</span></label>
         <input type="text" class="input-text" name="billing_last_name" id="reg_billing_last_name" value="<?php if ( ! empty( $_POST['billing_last_name'] ) ) echo esc_attr( $_POST['billing_last_name'] ); ?>" />
+    </p>
+    <p class="form-row form-row-wide">
+        <label for="reg_billing_phone"><?php _e( 'Phone', 'woocommerce-user-registration-form' ); ?></label>
+        <input type="text" class="input-text" name="billing_phone" id="reg_billing_phone" value="<?php echo isset( $_POST['billing_phone'] ) ? esc_attr( $_POST['billing_phone'] ) : ''; ?>" />
     </p>
     <div class="clear"></div>
 <?php }
